@@ -12,6 +12,10 @@ juegos_deportes = ['Mike Tyson\'s Punch-Out', 'Tony Hawk\'s Pro Skater 2', 'Madd
 
 juegos_mmo = ['World Of Warcraft', 'Final Fantasy 14', 'Elder Scrolls Online', 'Star Wars: The Old Republic', 'EVE Online', 'Guild Wars 2', 'Lord Of The Rings Online', 'Runescape', 'Rift', 'EverQuest']
 
+juegos_estrategia = ['Battle Brothers', 'Fire Emblem: Three Houses', 'XCOM 2', 'Civilization 6', 'Wargame: Red Dragon', 'Crusader Kings 3', 'Unity of Command 2', 'This War of Mine', 'Total War: Shogun 2', 'Slay the Spire']
+
+juegos_indie = ['Minecraft', 'Inside', 'Cuphead', 'Braid', 'Spelunky', 'Darkest Dungeon', 'Undertale', 'Crypt Of The Necrodancer', 'Hotline Miami', 'Limbo']
+
 @app.route("/")
 @app.route("/index")
 def index():
@@ -29,11 +33,11 @@ def mostrar(genero):
     elif genero == 'mmo':
         return render_template('mostrar.html', titulo = "VideoJuegos Online MMO",juegos = juegos_mmo)
     elif genero == 'estrategia':
-        return render_template('mostrar.html', name = genero)
+        return render_template('mostrar.html', titulo = "VideoJuegos De Estrategias",juegos = juegos_estrategia)
     elif genero == 'indies':
-        return render_template('mostrar.html', name = genero)
+        return render_template('mostrar.html', titulo = "VideoJuegos Indies",juegos = juegos_indie)
     else:
-        return "<h1> Genero No Encontrado </h1>"
+        return render_template('index.html', titulo = "VideoJuegos Por Genero")
 
 if __name__ == '__main__':
     app.run()
