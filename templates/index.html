@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="cont-generos">
+            <div class="gen genero">
+                <a href="{{ url_for('mostrar', genero = 'accion') }}">
+                <div class="gen-accion"></div>
+                <p>Accion</p>
+                </a>
+            </div>
+            <div class="gen genero">
+                <a href="{{ url_for('mostrar', genero = 'rpg') }}">
+                    <div class="gen-rpg"></div>
+                    <p>RPG</p>
+                </a>          
+            </div>
+            <div class="gen genero">
+                <a href="{{ url_for('mostrar', genero = 'sports') }}">
+                    <div class="gen-sports"></div>
+                    <p>Deportes</p>
+                </a>
+            </div>
+            <div class="gen genero">
+                <a href="{{ url_for('mostrar', genero = 'mmo') }}">
+                    <div class="gen-mmo"></div>
+                    <p>Online-MMO</p>
+                </a>
+            </div>
+            <div class="gen genero">
+                <a href="{{ url_for('mostrar', genero = 'estrategia') }}">
+                    <div class="gen-estrategia"></div>
+                    <p>Estrategia</p>
+                </a>
+            </div>
+            <div class="gen genero">
+                <a href="{{ url_for('mostrar', genero = 'indies') }}">
+                    <div class="gen-indies"></div>
+                    <p>Indies</p>
+                </a>
+            </div>
+    </div>
+{% endblock  %}

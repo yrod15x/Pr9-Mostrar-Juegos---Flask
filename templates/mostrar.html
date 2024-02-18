@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="juegos">
+    <ul>
+        {% for game in juegos %}
+            <li><h3>{{ game }}</h3></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock  %}

@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*body{
+    $color : rgb(148, 245, 211);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 1fr 10vh;
+    grid-template-areas: "cabecera"
+                          "contenido"
+                          "pie";
+    font-family: 'Mochiy Pop P One', sans-serif;
+    
+    header{
+        grid-area: cabecera;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color;
+        nav{
+            width: 80vw;
+            color: #fff;
+            text-shadow: 1px 1px 4px red; 
+            ul{
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                justify-content: space-between;
+                color: #fff;
+                li{
+                    list-style: none;
+                    font-size: 2.5rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    main{
+        grid-area: contenido;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .cont-generos{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 80vw;
+            height: fit-content;
+        }
+        .genero{
+            display: flex;
+            flex-flow: column nowrap;
+            margin: 1.5rem 0;
+            a{
+                text-decoration: none;
+                color: #000;
+            }
+            p{
+                background-color: $color;
+                text-align: center;
+                font-size: 1.3rem;
+                font-weight: bolder;
+                margin: -1.2rem 1rem;
+                padding: 1rem;
+                width: 20vw;
+            }
+            .gen-accion{
+                width: 20vw;
+                height: 25vh;
+                background-image: url("/static/action-vj.jpg");
+                background-size: cover;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                margin: 1.3rem 1rem;
+            }
+            .gen-rpg{
+                width: 20vw;
+                height: 25vh;
+                background-image: url("/static/rpg.png");
+                background-size: cover;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                margin: 1.3rem 1rem;
+            }
+            .gen-sports{
+                width: 20vw;
+                height: 25vh;
+                background-image: url("/static/sports.jpg");
+                background-size: cover;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                margin: 1.3rem 1rem;
+            }
+            .gen-mmo{
+                width: 20vw;
+                height: 25vh;
+                background-image: url("/static/mmo.jpg");
+                background-size: cover;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                margin: 1.3rem 1rem;
+            }
+            .gen-estrategia{
+                width: 20vw;
+                height: 25vh;
+                background-image: url("/static/strategy.jpg");
+                background-size: cover;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                margin: 1.3rem 1rem;
+            }
+            .gen-indies{
+                width: 20vw;
+                height: 25vh;
+                background-image: url("/static/indies.png");
+                background-size: cover;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                margin: 1.3rem 1rem;
+            }
+        }
+        .juegos{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            margin: 5rem 0;
+            ul{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-around;
+                align-items: start;
+                li{
+                    margin: 0.3rem 0;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+    }
+    footer{
+        grid-area: pie;
+        background-color: $color;
+        color: #fff;
+        text-shadow: 1px 1px 4px red; 
+        margin-top: 1rem;
+        font-size: 1.2rem,;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

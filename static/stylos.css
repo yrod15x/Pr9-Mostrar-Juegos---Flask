@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+* body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15vh 1fr 10vh;
+  grid-template-areas: "cabecera" "contenido" "pie";
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+* body header {
+  grid-area: cabecera;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(148, 245, 211);
+}
+* body header nav {
+  width: 80vw;
+  color: #fff;
+  text-shadow: 1px 1px 4px red;
+}
+* body header nav ul {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+* body header nav ul li {
+  list-style: none;
+  font-size: 2.5rem;
+}
+* body header nav ul a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.3rem;
+}
+* body main {
+  grid-area: contenido;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body main .cont-generos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80vw;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+* body main .genero {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 1.5rem 0;
+}
+* body main .genero a {
+  text-decoration: none;
+  color: #000;
+}
+* body main .genero p {
+  background-color: rgb(148, 245, 211);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin: -1.2rem 1rem;
+  padding: 1rem;
+  width: 20vw;
+}
+* body main .genero .gen-accion {
+  width: 20vw;
+  height: 25vh;
+  background-image: url("/static/action-vj.jpg");
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: 1.3rem 1rem;
+}
+* body main .genero .gen-rpg {
+  width: 20vw;
+  height: 25vh;
+  background-image: url("/static/rpg.png");
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: 1.3rem 1rem;
+}
+* body main .genero .gen-sports {
+  width: 20vw;
+  height: 25vh;
+  background-image: url("/static/sports.jpg");
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: 1.3rem 1rem;
+}
+* body main .genero .gen-mmo {
+  width: 20vw;
+  height: 25vh;
+  background-image: url("/static/mmo.jpg");
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: 1.3rem 1rem;
+}
+* body main .genero .gen-estrategia {
+  width: 20vw;
+  height: 25vh;
+  background-image: url("/static/strategy.jpg");
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: 1.3rem 1rem;
+}
+* body main .genero .gen-indies {
+  width: 20vw;
+  height: 25vh;
+  background-image: url("/static/indies.png");
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: 1.3rem 1rem;
+}
+* body main .juegos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+* body main .juegos ul {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: start;
+}
+* body main .juegos ul li {
+  margin: 0.3rem 0;
+  font-size: 1.5rem;
+}
+* body footer {
+  grid-area: pie;
+  background-color: rgb(148, 245, 211);
+  color: #fff;
+  text-shadow: 1px 1px 4px red;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=stylos.css.map */
